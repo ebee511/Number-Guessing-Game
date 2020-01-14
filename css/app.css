@@ -5,3 +5,7 @@
 .show {
   display: block;
 }
+
+#display-message {
+  width: 50%;
+}
