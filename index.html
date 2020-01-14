@@ -9,14 +9,28 @@
   </head>
   <body>
     <h1>Number Guesser</h1>
-    <p>
-      Guess a number between <span id="min">1</span> and
-      <span id="max">10</span>
-    </p>
-    <p id="display-guess">Previous guesses:</p>
+    <p>Instructions:</p>
+    <ul>
+      <li>Goal: To correctly guess the random number between 1 and 100</li>
+      <li>Player gets 10 attempts to guess the random number</li>
+      <li>
+        A player enters a guess by typing a number in the input field and
+        clicking submit
+      </li>
+      <li>
+        The computer will tell the player if the guess is too high, too low, or
+        correct!
+      </li>
+      <li>
+        There will be a play again button if the user solves the number or maxes
+        out guess attempts.
+      </li>
+    </ul>
+    <p id="display-guess">Previous guesses: <span id="guesses"></span></p>
     <input type="number" name="user-guess" id="user-guess" />
+    <p id="display-message"></p>
     <input type="submit" value="Submit" id="submitBtn" />
-    <input type="button" value="Reset" class="hide" id="resetBtn" />
+    <input type="button" value="Play Again" class="hide" id="resetBtn" />
 
     <!-- script -->
     <script src="js/app.js"></script>
